@@ -7,13 +7,11 @@ menuIcon.onclick = function(){
     container.classList.toggle("large-container");
 }
 
+// Dark Light Mode
+let darkModeIcon = document.querySelector('#darkMode-icon');
+// let moonIcon = darkModeIcon.querySelector('i');
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const profileClickButton = document.querySelector(".user-icon");
-
-    profileClickButton.addEventListener("click", function() {
-        // Toggle the dark-mode class on the body element
-        document.body.classList.toggle("dark-mode");
-    });
-});
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+};
