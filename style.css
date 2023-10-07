@@ -8,12 +8,21 @@
     --second-text-color:#828282;
     
 }
-.darkmode{
+.dark-mode{
     --bg-color:#1b1b1b;
     --second-bg-color:#ccc;
     --main-text-color:#fdfdfd;
     --text-color:#676767;
     --second-text-color:#b1b1b1;
+}
+
+#darkMode-icon{
+    /* position: absolute; */
+    right: 7rem;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    color: var(--second-text-color);
+    margin-bottom: .1rem;
 }
 
 *{
@@ -47,7 +56,7 @@ img{
     width: 100px;
 }
 .menu-icon{
-    color: var(--main-text-color);
+    color:var(--text-color) !important;
     margin-right: 1rem;
     width: 25px;
 }
@@ -628,6 +637,15 @@ video:hover{
 
 
 @media (max-width: 900px){
+    #darkMode-icon{
+        position: absolute;
+        right: 5rem;
+        margin-right: 2px;
+        font-size: 1.7rem;
+        color: var(--second-text-color);
+        margin-bottom: .1rem;
+    }
+    
     .banner img{
         width: 100%;
     }
