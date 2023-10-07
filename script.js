@@ -14,4 +14,8 @@ let darkModeIcon = document.querySelector('#darkMode-icon');
 darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 1d186c913fc2b56321217035cae06881825ecc1c
